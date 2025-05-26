@@ -1,21 +1,69 @@
 @font-face {
-  font-family: 'DMSans';
-  src: url('/assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+  font-family: "DMSans";
+  src: url("/assets/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-*{
-    font-family: 'DMSans' ;
+* {
+  font-family: "DMSans";
 }
-img{
-    width: 10rem;
+body {
+  padding: 5rem;
 }
-.content-container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 1rem;
+img {
+  width: 10rem;
+  align-self: center;
+  justify-self: center;
 }
-.content{
-    border: 1px solid black;
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 145px);
+  gap: 2rem;
+}
+.content {
+  border-radius: 0.8rem;
+}
+#contentQuicker {
+  display: flex;
+  grid-row: span 3;
+  padding-left: 2rem;
+  background-color: #faeee2;
+}
+.first-row-inner-text {
+  font-size: 30pt;
+  line-height: 2.7rem;
+}
+#usingAi {
+  display: flex;
+  flex-direction: row;
+  grid-row: 4/-1;
+  grid-column: 1;
+  background-color: #ffcc69;
+  align-items: space-evenly;
+}
+.inner-content-using-ai {
+  display: grid;
+ grid-template-rows: 40% 70%;
+  align-items: space-evenly;
+}
+.inner-content {
+  align-self: center;
+}
+#quickerText {
+  color: #7854d9;
+  font-style: italic;
+  display: block;
+}
+#usingAiImageContainer {
+  justify-self: center;
+}
+#usingAiImage {
+  padding-left: auto;
+  width: 225px;
+margin-top: 1rem;
+}
+#usingAiText{
+    align-self: center;
+    padding: 1rem;
 }
