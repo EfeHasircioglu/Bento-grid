@@ -9,6 +9,7 @@
 }
 body {
   padding: 5rem;
+  background-color: #f5f5f5;
 }
 img {
   width: 10rem;
@@ -44,7 +45,7 @@ img {
 }
 .inner-content-using-ai {
   display: grid;
- grid-template-rows: 40% 70%;
+  grid-template-rows: 40% 70%;
   align-items: space-evenly;
 }
 .inner-content {
@@ -61,9 +62,147 @@ img {
 #usingAiImage {
   padding-left: auto;
   width: 225px;
-margin-top: 1rem;
+  margin-top: 1rem;
 }
-#usingAiText{
-    align-self: center;
+#usingAiText {
+  align-self: center;
+  padding: 2rem;
+}
+
+#starsContainer {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #7651dc;
+  display: flex;
+  flex-direction: column;
+}
+#starsSocialMediaText {
+  align-self: center;
+  font-size: 50pt;
+  line-height: 4rem;
+  padding: 1rem;
+  text-align: center;
+  color: #f5f5f5;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+#stars10xText {
+  color: #fcc95e;
+}
+#starsImage {
+  width: 15rem;
+}
+#starsInner {
+  align-self: center;
+  color: #f5f5f5;
+  font-size: 15pt;
+  padding-top: 1rem;
+}
+
+#scheduleContainer {
+  display: flex;
+  flex-direction: column;
+  grid-row: span 4;
+  grid-column: 4;
+  overflow: hidden;
+  background-color: #dcd1fc;
+}
+
+#scheduleImage {
+  width: 27rem;
+  margin-right: auto;
+  padding-left: 2rem;
+}
+
+#scheduleText {
+  font-size: 25pt;
+  padding: 2rem;
+  font-weight: 600;
+}
+#scheduleInnerText {
+  padding: 1rem;
+  margin-top: 0.6rem;
+  font-size: 13pt;
+}
+
+#accountsContainer {
+  display: flex;
+  flex-direction: column;
+  grid-row: span 2;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#accountsImage {
+  width: 25rem;
+  margin-top: 2rem;
+  margin-left: 7rem;
+}
+
+#accountsText {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 1rem;
+  font-size: 30pt;
+  font-weight: 600;
+  line-height: 2.2rem;
+}
+
+#consistentContainer {
+  display: flex;
+  flex-direction: column;
+  grid-row: span 2;
+  background-color: #fecc6b;
+  overflow: hidden;
+}
+#consistentText {
+  margin-top: 1rem;
+  font-size: 30pt;
+  line-height: 2.4rem;
+  font-weight: 600;
+  padding-left: 2rem;
+}
+#consistentImage{
+    width: 15rem;
+    margin-top: 2rem;
+}
+
+#growthContainer{
+    display: flex;
+    grid-row: span 2;
+    flex-direction: column;
+    background-color: #fff;
+}
+#growthText{
     padding: 1rem;
+    font-size: 17pt;
+}
+#growthBigText{
+    font-size: 60pt;
+    font-weight: 600;
+    display: block;
+}
+#growthImage{
+    width: 13rem;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+#followersContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #7651dc;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+#followersText{
+  color: #f5f5f5;
+  font-size: 30pt;
+  align-self: center;
+  padding: 1.5rem;
+  font-weight: 600;
+}
+#followersImage{
+  padding: 1rem;
+  width: 15rem;
 }
