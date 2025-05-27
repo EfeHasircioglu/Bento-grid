@@ -19,7 +19,7 @@ img {
 .content-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 145px);
+  grid-template-rows: repeat(10, 75px);
   gap: 2rem;
 }
 .content {
@@ -27,18 +27,18 @@ img {
 }
 #contentQuicker {
   display: flex;
-  grid-row: span 3;
+  grid-row: span 5;
   padding-left: 2rem;
   background-color: #faeee2;
 }
-.first-row-inner-text {
+#contentQuickerText {
   font-size: 30pt;
   line-height: 2.7rem;
 }
 #usingAi {
   display: flex;
   flex-direction: row;
-  grid-row: 4/-1;
+  grid-row: 6/-1;
   grid-column: 1;
   background-color: #ffcc69;
   align-items: space-evenly;
@@ -67,23 +67,26 @@ img {
 #usingAiText {
   align-self: center;
   padding: 2rem;
+  font-weight: bold;
+  line-height: 2.4rem;
 }
 
 #starsContainer {
-  grid-row: span 2;
+  grid-row: span 4;
   grid-column: span 2;
   background-color: #7651dc;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #starsSocialMediaText {
   align-self: center;
-  font-size: 50pt;
-  line-height: 4rem;
+  font-size: 60pt;
+  line-height: 4.5rem;
   padding: 1rem;
   text-align: center;
   color: #f5f5f5;
-  margin-top: 2rem;
   padding-bottom: 1rem;
 }
 #stars10xText {
@@ -91,18 +94,19 @@ img {
 }
 #starsImage {
   width: 15rem;
+  padding-top: 1rem;
 }
 #starsInner {
   align-self: center;
   color: #f5f5f5;
-  font-size: 15pt;
+  font-size: 17pt;
   padding-top: 1rem;
 }
 
 #scheduleContainer {
   display: flex;
   flex-direction: column;
-  grid-row: span 4;
+  grid-row: span 7;
   grid-column: 4;
   overflow: hidden;
   background-color: #dcd1fc;
@@ -120,89 +124,232 @@ img {
   font-weight: 600;
 }
 #scheduleInnerText {
-  padding: 1rem;
-  margin-top: 0.6rem;
-  font-size: 13pt;
+  padding: 2.2rem;
+  margin-bottom: 5rem;
+  font-size: 16pt;
 }
 
 #accountsContainer {
   display: flex;
   flex-direction: column;
-  grid-row: span 2;
+  grid-row: span 3;
   background-color: #fff;
   overflow: hidden;
 }
 
 #accountsImage {
-  width: 25rem;
+  width: 24rem;
   margin-top: 2rem;
-  margin-left: 7rem;
+  margin-left: 8rem;
 }
 
 #accountsText {
   margin-top: auto;
   margin-bottom: auto;
   padding: 1rem;
-  font-size: 30pt;
+  font-size: 28pt;
   font-weight: 600;
   line-height: 2.2rem;
+  padding-bottom: 2.5rem;
 }
 
 #consistentContainer {
   display: flex;
   flex-direction: column;
-  grid-row: span 2;
+  grid-row: span 3;
   background-color: #fecc6b;
   overflow: hidden;
 }
 #consistentText {
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   font-size: 30pt;
   line-height: 2.4rem;
   font-weight: 600;
   padding-left: 2rem;
 }
-#consistentImage{
-    width: 15rem;
-    margin-top: 2rem;
+#consistentImage {
+  width: 15rem;
+  margin-top: 1rem;
 }
 
-#growthContainer{
-    display: flex;
-    grid-row: span 2;
-    flex-direction: column;
-    background-color: #fff;
+#growthContainer {
+  display: flex;
+  grid-row: span 3;
+  flex-direction: column;
+  background-color: #fff;
 }
-#growthText{
-    padding: 1rem;
-    font-size: 17pt;
+#growthText {
+  padding: 1rem;
+  font-size: 17pt;
 }
-#growthBigText{
-    font-size: 60pt;
-    font-weight: 600;
-    display: block;
+#growthBigText {
+  font-size: 60pt;
+  font-weight: 600;
+  display: block;
 }
-#growthImage{
-    width: 13rem;
-   margin-top: auto;
-   margin-bottom: auto;
+#growthImage {
+  width: 13rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 3rem;
 }
 
-#followersContainer{
-    display: flex;
-    flex-direction: row;
-    background-color: #7651dc;
-    grid-column: span 2;
-    grid-row: span 2;
+#followersContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #7651dc;
+  grid-column: span 2;
+  grid-row: span 3;
 }
-#followersText{
+#followersText {
   color: #f5f5f5;
-  font-size: 30pt;
+  font-size: 35pt;
   align-self: center;
   padding: 1.5rem;
-  font-weight: 600;
+  line-height: 3rem;
 }
-#followersImage{
+#followersImage {
   padding: 1rem;
   width: 15rem;
+}
+
+@media (max-width: 1250px) {
+  .content-container {
+    grid-template-rows: repeat(10, 50px);
+  }
+
+  #followersImage,
+  #growthImage {
+    width: 7rem;
+    padding-bottom: 0.5rem;
+  }
+  #growthBigText {
+    font-size: 35pt;
+  }
+  img {
+    width: 9rem !important;
+  }
+  #followersText,
+  #growthText,
+  #starsSocialMediaText {
+    font-size: 15pt;
+    line-height: normal;
+  }
+  #consistentText {
+    font-size: 20pt;
+    line-height: 1.7rem;
+  }
+  #followersText {
+    font-size: 25pt;
+  }
+  #starsSocialMediaText {
+    font-size: 40pt;
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+  #starsImage {
+    width: 30rem;
+    padding: 0.2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #usingAiImage {
+    width: 12rem !important;
+  }
+  #usingAiText {
+    padding: 2rem;
+    margin-top: 0.7rem;
+    font-size: 22pt;
+    line-height: normal;
+  }
+  #accountsText {
+    font-size: 20pt;
+  }
+  #accountsImage {
+    width: 18rem !important;
+    padding-left: 4rem;
+    margin: 0.6rem;
+    margin-top: 0.2rem;
+  }
+  #scheduleImage {
+    width: 20rem !important;
+    padding-left: 3rem;
+  }
+  #scheduleText {
+    font-size: 18pt;
+  }
+  #scheduleInnerText {
+    font-size: 12pt;
+    padding: 2rem;
+    padding-top: 1rem;
+    margin: 0;
+  }
+  #contentQuickerText {
+    font-size: 25pt;
+    line-height: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    height: fit-content;
+    padding: 1.5rem;
+  }
+  body {
+    padding: 2rem;
+  }
+  #starsSocialMediaText {
+    padding: 0;
+    padding-top: 1rem;
+    font-size: 50pt;
+  }
+  #starsContainer {
+    order: -4;
+  }
+  #accountsContainer {
+    order: -3;
+  }
+  #consistentContainer {
+    order: -2;
+    height: 30rem;
+    align-items: flex-start;
+    justify-content: left;
+  }
+  #scheduleContainer {
+    order: -1;
+  }
+  #followersContainer {
+    order: -1;
+  }
+  #growthContainer {
+    order: -1;
+  }
+  #accountsText {
+    font-size: 30pt;
+    line-height: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #accountsImage {
+    width: 30rem !important;
+  }
+  #consistentText {
+    font-size: 35pt;
+    line-height: 3.5rem;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7rem;
+  }
+  #consistentImage {
+    width: 25rem !important;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    min-height: max-content;
+
+  }
 }
