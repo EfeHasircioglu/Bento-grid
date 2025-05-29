@@ -69,6 +69,7 @@ img {
   padding: 2rem;
   font-weight: bold;
   line-height: 2.4rem;
+  font-size: 30pt;
 }
 
 #starsContainer {
@@ -230,9 +231,12 @@ img {
     width: 9rem !important;
   }
   #followersText,
-  #growthText,
   #starsSocialMediaText {
     font-size: 15pt;
+    line-height: 3.5rem;
+  }
+  #growthText {
+    font-size: 12pt;
     line-height: normal;
   }
   #consistentText {
@@ -263,7 +267,8 @@ img {
     line-height: normal;
   }
   #accountsText {
-    font-size: 20pt;
+    font-size: 15pt;
+    line-height: normal;
   }
   #accountsImage {
     width: 18rem !important;
@@ -279,8 +284,8 @@ img {
     font-size: 18pt;
   }
   #scheduleInnerText {
-    font-size: 12pt;
-    padding: 2rem;
+    font-size: 10pt;
+    padding: 1rem;
     padding-top: 1rem;
     margin: 0;
   }
@@ -290,7 +295,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .content-container {
     display: flex;
     flex-direction: column;
@@ -304,30 +309,33 @@ img {
   }
   #starsSocialMediaText {
     padding: 0;
-    padding-top: 1rem;
-    font-size: 50pt;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 40pt;
   }
   #starsContainer {
-    order: -4;
+    order: -6;
   }
   #accountsContainer {
-    order: -3;
+    order: -5;
   }
   #consistentContainer {
-    order: -2;
-    height: 30rem;
+    order: -4;
+    height: 25rem;
     align-items: flex-start;
     justify-content: left;
   }
   #scheduleContainer {
-    order: -1;
-  }
-  #followersContainer {
-    order: -1;
+    order: -3;
   }
   #growthContainer {
     order: -1;
   }
+  #followersContainer {
+    order: -2;
+    flex-direction: column;
+  }
+
   #accountsText {
     font-size: 30pt;
     line-height: normal;
@@ -342,14 +350,235 @@ img {
     line-height: 3.5rem;
     margin: 0;
     padding: 0;
-    padding-bottom: 7rem;
   }
   #consistentImage {
     width: 25rem !important;
     padding: 0;
     margin: 0;
+    padding-top: 3rem;
     overflow: hidden;
     min-height: max-content;
+  }
+  #scheduleText {
+    font-size: 35pt;
+    padding: 1rem;
+  }
+  #scheduleImage {
+    width: 23rem !important;
+    margin: 0;
+    padding: 0;
+  }
+  #scheduleInnerText {
+    font-size: 20pt;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  #followersImage {
+    width: 20rem !important;
+  }
+  #followersText {
+    text-align: center;
+    font-size: 35pt;
+    line-height: 3rem;
+    padding-bottom: 0;
+  }
+  #growthText {
+    font-size: 20pt;
+  }
+  #growthBigText {
+    font-size: 45pt;
+  }
+  #growthImage {
+    align-self: flex-start;
+    width: 13rem !important;
+    padding: 1rem;
+  }
+  #contentQuickerText {
+    font-size: 30pt;
+    line-height: 2.7rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+  }
+  #quickerText {
+    display: inline;
+  }
+  #quickerImage {
+    width: 15rem !important;
+  }
+  #usingAiText {
+    font-size: 35pt;
+    line-height: 3rem;
+    padding: 0;
+    margin: 0;
+  }
+  #usingAiImage {
+    width: 16rem !important;
+    padding: 1rem;
+    align-self: left;
+  }
+  #usingAiImageContainer {
+    margin-right: auto;
+    padding: 0;
+  }
+  .inner-content-using-ai {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+@media (max-width: 480px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    height: fit-content;
+    padding: 1.5rem;
+  }
+  body {
+    padding: 2rem;
+  }
+  #starsSocialMediaText {
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 40pt;
+  }
+
+  #accountsText {
+    font-size: 30pt;
+    line-height: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #accountsImage {
+    width: 25rem !important;
+  }
+
+  #consistentImage {
+    width: 18rem !important;
+    padding-top: 2rem;
+  }
+
+  #scheduleImage {
+    width: 18rem !important;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  #followersImage {
+    width: 17rem !important;
+  }
+}
+
+/* 375 için de responsiveness yapılacak, sonra gg wp */
+@media (max-width: 375px) {
+  body {
+    padding: 0.5rem;
+  }
+  .content {
+    padding: 0.75rem;
+  }
+  #starsSocialMediaText {
+    font-size: 35pt;
+    padding: 0.5rem;
+    line-height: 3.3rem;
+  }
+  #starsImage {
+    padding-top: 1rem;
+  }
+  #starsInner {
+    text-align: center;
+    font-size: 15pt;
+    padding: 1rem;
+  }
+  #accountsImage {
+    width: 20rem !important;
+  }
+  #accountsText {
+    font-size: 16pt;
+    padding: 0;
+    line-height: 1.6rem;
+  }
+  #consistentText {
+    font-size: 20pt;
+    line-height: normal;
+  }
+  #consistentImage {
+    padding: 0;
+    padding-top: 1rem;
+    align-self: flex-start;
+    width: 14rem !important;
+  }
+  #consistentContainer {
+    width: auto;
+    height: 12rem;
+    margin: 0;
+  }
+  #scheduleText {
+    font-size: 15pt;
+    text-align: center;
+  }
+  #scheduleImage {
+    width: 14rem !important;
+  }
+  #scheduleInnerText {
+    font-size: 12pt;
+    padding: 1rem;
+    padding-top: 0;
+  }
+  #followersImage {
+    width: 14rem !important;
+    align-self: center;
+  }
+  #followersText {
+    font-size: 20pt;
+    line-height: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  #growthText {
+    font-size: 10pt;
+    padding: 0;
+    padding-left: 0.5rem;
+  }
+  #growthBigText {
+    font-size: 25pt;
+  }
+  #growthImage {
+    width: 9rem !important;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  #quickerText {
+    font-size: inherit;
+  }
+  #contentQuickerText {
+    font-size: 17pt;
+    line-height: 1.8rem;
+    padding-top: 1rem;
+  }
+  #quickerImage {
+    width: 10rem !important;
+  }
+  #usingAiText {
+    font-size: 20pt;
+    line-height: 1.9rem;
+    padding: 0;
+    margin: 0;
+  }
+  #usingAi {
+    padding: 0;
+    margin: 0;
+  }
+  #usingAiImage {
+    width: 14rem !important;
+    padding-top: 0.6rem;
+  }
+  .inner-content-using-ai {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
   }
 }
